@@ -40,28 +40,117 @@
         height: auto;
         object-fit: cover;
       }
+
+      section {
+display: flex;
+align-items: center;
+      }
+
+      .hero {
+background-color: var(--navy-blue);
+padding: 100px 0 100px;
+      }
+
+      .about {
+        background-color: var(--green);
+justify-content: space-between;
+      }
+
+      .testimonial {
+        background-color: var(--light-pink);
+      }
+
+      .podcast {
+        background-color: var(--super-light);
+      }
+
+      .footer {
+        background-color: var(--navy-blue);
+      }
+
+      .hero-content {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 1px;
+      }
+
+      .hero-text {
+        padding: 20px 0 40px;
+        text-align: center;
+        color: white;
+      }
+
+      .podcast-logo {
+width: 300px;
+      }
+
+      .hero-btn {
+        color: var(--navy-blue);
+        background-color: var(--light-pink);
+        border-style: none;
+      }
+
+      .hero-btn img {
+ width: 32px;
+      } 
+       
+      .button {
+        font-style: inherit;
+      }
+
+      .hero-shapes {
+        width: 20%;
+        position: relative;
+      }
+
+      .hero-pink-1 {
+        width: 300px;
+        position: absolute;
+        top: 50;
+        right: 
+        bottom: 400;
+      }  
+
+      .hero-green-1 {
+        width: 100px;
+        position: absolute;
+      }
+
+      .hero-white-1 {
+        width: 80px;
+        position: absolute;
+      }
     </style>
   </head>
   <body>
     <section class="hero">
       <div class="hero-shapes">
-        <img
+        <img class="hero-pink-1"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/306/original/hero-pink-triangle-1.png?1731566578"
         />
-        <img
+        <img class="hero-green-1"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/308/original/hero-green-circle-1.png?1731566592"
         />
-        <img
+        <img class="hero-white-1"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/310/original/hero-white-circle-1.png?1731566604"
         />
       </div>
       <div class="hero-content">
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/301/original/podcast-logo.png?1731565999"
+        class="podcast-logo"  
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/301/original/podcast-logo.png?1731565999"
           alt="ginger hubbard podcast logo"
         />
         <h1>Podcast</h1>
-        <p>
+        <p class="hero-text">
           Get encouraged and equipped to reach beyond outward behavior, address
           issues of the heart, and point your children to the transformational
           power of Christ.
@@ -69,7 +158,7 @@
         <a
           href="https://open.spotify.com/show/7Fye6g3Zc9uipbYCwXsB6M"
           target="_blank"
-          ><button>
+          ><button class="button hero-btn">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/304/original/spotify-logo-navy.png?1731566217"
             />Listen on Spotify
