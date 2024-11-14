@@ -48,12 +48,7 @@ align-items: center;
 
       .hero {
 background-color: var(--navy-blue);
-padding: 100px 0 100px;
-      }
-
-      .about {
-        background-color: var(--green);
-justify-content: space-between;
+padding: 100px 0 120px;
       }
 
       .testimonial {
@@ -79,56 +74,95 @@ justify-content: space-between;
         font-weight: 600;
         text-transform: uppercase;
         color: white;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        font-size: 24px;
       }
 
       .hero-text {
         padding: 20px 0 40px;
         text-align: center;
         color: white;
+        width: 600px;
+        font-size: 20px;
+        line-height: 40px;
       }
 
       .podcast-logo {
 width: 300px;
       }
 
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
       .hero-btn {
         color: var(--navy-blue);
         background-color: var(--light-pink);
         border-style: none;
+        padding: 7px 20px;
+        display: flex;
+        align-items: center;
       }
 
       .hero-btn img {
  width: 32px;
+ padding-right: 5px;
       } 
-       
-      .button {
-        font-style: inherit;
-      }
 
       .hero-shapes {
         width: 20%;
         position: relative;
       }
 
-      .hero-pink-1 {
-        width: 300px;
+      .hero-pink-1, .hero-pink-2, .hero-green-1, .hero-green-2, .hero-white-1, .hero-white-2 {
         position: absolute;
-        top: 50;
-        right: 
-        bottom: 400;
       }  
 
+      .hero-pink-1 {
+       width: 200px;
+       bottom: 90px;
+       right: 10px;
+       }
+
+      .hero-pink-2 {
+        width: 150px;
+        top: 60px;
+      }
+
       .hero-green-1 {
-        width: 100px;
-        position: absolute;
+        width: 80px;
+        bottom: 10px;
+        right: 40px;
+      }
+
+      .hero-green-2 {
+        width: 70px;
+        bottom: 140px;
       }
 
       .hero-white-1 {
-        width: 80px;
-        position: absolute;
+        width: 70px;
+        top: 160px;
+        left: 20px;
       }
-    </style>
+
+      .hero-white-2 {
+        width: 50px;
+        right: 120px;
+      }
+
+      .about {
+        background-color: var(--green);
+        padding: 0 20%;
+      }
+
+.about-col {
+  width: 50%;
+}
+
+</style>
   </head>
   <body>
     <section class="hero">
@@ -157,28 +191,28 @@ width: 300px;
         </p>
         <a
           href="https://open.spotify.com/show/7Fye6g3Zc9uipbYCwXsB6M"
-          target="_blank"
-          ><button class="button hero-btn">
-            <img
+          target="_blank"><div class="hero-btn">
+          <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/304/original/spotify-logo-navy.png?1731566217"
             />Listen on Spotify
-          </button></a
+          </div></a
         >
       </div>
       <div class="hero-shapes">
-        <img
+        <img class="hero-pink-2"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/307/original/hero-pink-triangle-2.png?1731566586"
         />
-        <img
+        <img class="hero-green-2"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/309/original/hero-green-circle-2.png?1731566597"
         />
-        <img
+        <img class="hero-white-2"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/311/original/hero-white-circle-2.png?1731566610"
         />
       </div>
     </section>
     <section class="about">
-      <h2>About Ginger</h2>
+      <div class="about-col">
+<h2>About Ginger</h2>
       <p>
         Ginger’s favorite thing in the world to do is encourage parents to reach
         the hearts of their children for the glory of God. Ginger and her
@@ -186,10 +220,13 @@ width: 300px;
         ministering together at parenting events and homeschool conventions
         across the country.
       </p>
-      <img
+      </div>
+      <div class="about-col">
+<img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/305/original/ginger-hubbard.jpg?1731566428"
         alt="ginger hubbard profile pic"
       />
+      </div>
     </section>
     <section class="testimonial">
     <div class="testimonial-shapes">
